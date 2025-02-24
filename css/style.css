@@ -705,15 +705,15 @@ input {
 }
 
 .progress {
-  background-color: rgb(76, 84, 130);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
 .progress_bar {
-  border-top: 1px solid rgb(160, 160, 160);
+  border-top: 1px solid rgb(26, 26, 26);
   position: absolute;
   top: 50%;
   width: 0%;
