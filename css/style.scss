@@ -599,9 +599,9 @@ input {
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #00263f;
+  background: #fff;
   text-align: center;
-  color: #fff;
+  color: #1d1d1d;
 }
 
 /* Loadingバー中央配置 */
@@ -614,60 +614,12 @@ input {
   z-index: 999;
   width: 100%;
   transform: translate(-50%, -50%);
-  color: #fff;
-}
-
-// スクロール後のヘッダー
-.second_header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: 0.3s;
-  z-index: 444;
-  /* 非表示にする */
-  opacity: 0;
-  visibility: hidden;
-  .header_wrap {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 21px;
-    position: absolute;
-    @include mobile {
-      padding: 14px;
-    }
-    .emiuno_logo {
-      width: 58px;
-      @include mobile {
-        width: 50px;
-      }
-    }
-  }
-  .header_img {
-    width: 100%;
-    @include mobile {
-      display: none;
-    }
-  }
-  .header_img_sp {
-    display: none;
-    @include mobile {
-      display: block;
-      width: 100%;
-    }
-  }
-}
-.is-active {
-  /* 表示する */
-  opacity: 1;
-  visibility: visible;
+  color: #1d1d1d;
 }
 
 // サンクスページ
 .thanks_title {
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 .thanks {
@@ -681,10 +633,11 @@ input {
   padding-bottom: 200px;
   .bluerose {
     width: 15%;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 20px;
   }
   p {
-    padding-top: 40px;
+    padding-top: 35px;
     font-size: 14px;
     line-height: 2;
   }
