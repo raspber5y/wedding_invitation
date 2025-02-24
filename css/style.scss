@@ -47,12 +47,6 @@ h3 {
   letter-spacing: 3px;
 }
 
-.concept {
-  position: relative;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 main {
   max-width: 462px;
   background-color: #ffffff;
@@ -669,4 +663,29 @@ input {
   /* 表示する */
   opacity: 1;
   visibility: visible;
+}
+
+// サンクスページ
+.thanks_title {
+  padding-top: 200px;
+}
+
+.thanks {
+  width: calc(100% - 16px);
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.thanks_wrap {
+  text-align: center;
+  padding-bottom: 200px;
+  .bluerose {
+    width: 15%;
+    margin-top: 100px;
+  }
+  p {
+    padding-top: 40px;
+    font-size: 14px;
+    line-height: 2;
+  }
 }

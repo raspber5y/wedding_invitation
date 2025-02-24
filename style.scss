@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+@use "../../css/common";
+
+// レスポンシブ対応
+// ブレイクポイント
+$mb: 767px;
+// @mediaのフォーマット
+@mixin mobile {
+  @media screen and (max-width: $mb) {
+    @content;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  font-family: Italiana;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: Italiana;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.contact,
+.totop {
+  width: 73%;
+  margin: 0 auto;
+  @include mobile {
+    width: 87%;
+  }
+}
+
+header {
+  position: relative;
+  .header_wrap {
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    @include mobile {
+      padding: 25px;
+    }
+    .emiuno_logo {
+      width: 58px;
+      @include mobile {
+        width: 50px;
+      }
+    }
+  }
+  .header_img {
+    width: 100%;
+    @include mobile {
+      display: none;
+    }
+  }
+  .header_img_sp {
+    display: none;
+    @include mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.form_wrap {
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    display: block;
+    margin-bottom: 250px;
+  }
+}
+
+.contact_title {
+  display: flex;
+  align-items: center;
+  margin-left: -12%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  @include mobile {
+    margin-left: -5%;
+  }
+  .title {
+    padding-left: 10px;
+  }
+  .title_shape {
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #012f4e;
+    border-right: 1px solid #012f4e;
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+}
+
+.form_lead {
+  width: 40%;
+  font-size: 15px;
+  @include mobile {
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 80px;
+    text-align: center;
+    margin: 10px;
+  }
+  .lead_text,
+  .lead_text2 {
+    line-height: 1.74;
+  }
+  .lead_text2 {
+    @include mobile {
+      display: none;
+    }
+  }
+  .mailaddress {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    @include mobile {
+      display: none;
+    }
+    img {
+      width: 18px;
+      padding-right: 10px;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.form_lead_sp {
+  display: none;
+  @include mobile {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    padding-bottom: 80px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .lead_text2 {
+    line-height: 1.74;
+  }
+  .mailaddress {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    img {
+      width: 18px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.form {
+  width: 42%;
+  @include mobile {
+    width: 95%;
+  }
+  .question {
+    font-size: 15px;
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    align-items: center;
+    margin-left: -30px;
+    @include mobile {
+      margin-left: -7px;
+    }
+  }
+  .question::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #012f4e;
+  }
+  .question::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 11px;
+    width: 9px;
+    height: 1px;
+    background: #012f4e;
+  }
+  .answerbox {
+    display: block;
+    width: 100%;
+    height: 36px;
+    color: #012f4e;
+    padding: 10px;
+    background: #c1bcbd;
+    border: none;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 100%;
+    height: 290px;
+    color: #012f4e;
+    padding: 10px;
+    background: #c1bcbd;
+    border: none;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+  }
+  button {
+    width: 76px;
+    height: 42px;
+    background: #faede8;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 140px;
+    filter: drop-shadow(-5px 5px 0px rgba(85, 86, 86, 0.3));
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// チェックボックス
+.form_checkmark {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 28px;
+  margin-bottom: 70px;
+}
+
+.form_checkmark input {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border: solid 1px #012f4e;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  &:after {
+    content: "";
+    position: absolute;
+    border: solid #faede8;
+    border-width: 0 2px 2px 0;
+    left: 3px;
+    top: 0px;
+    width: 3px;
+    height: 6px;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+.form_checkmark {
+  input:checked + .checkmark {
+    background: #012f4e;
+    border-color: #012f4e;
+  }
+
+  input:checked + .checkmark:after {
+    opacity: 1;
+  }
+}
+
+// プレイスホルダー
+textarea::placeholder {
+  color: #012f4e;
+  opacity: 0.5;
+}
+
+.totop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: -8px;
+  @include mobile {
+    display: block;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .hope {
+    font-family: Italiana;
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    margin-left: -37%;
+    color: #012f4e;
+    @include mobile {
+      width: 317px;
+      font-size: 31px;
+      letter-spacing: 0.07em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-bottom: 350px;
+      margin-left: 0px;
+    }
+  }
+  .contact_btn {
+    position: relative;
+    right: -90px;
+    bottom: -93px;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(
+      #345971 0%,
+      #012f4e 25%,
+      #345971 50%,
+      #012f4e78 100%
+    );
+    background-position: 1% 50%;
+    background-size: auto 200%;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include mobile {
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      bottom: -99px;
+    }
+    .btn_border {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: #ffffff 1px solid;
+      box-sizing: border-box;
+    }
+    .btn_text {
+      display: inline;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      .btn_text_en {
+        font-family: Cambay;
+        font-size: 22px;
+      }
+    }
+  }
+}
+.contact_btn:hover {
+  background-position: 100% 0;
+}
+// サンクスページ
+.thanks_wrap {
+  text-align: center;
+  margin-bottom: 80px;
+  @include mobile {
+    width: 108%;
+    margin-left: -4%;
+    margin-bottom: 250px;
+  }
+  .bluerose {
+    width: 6%;
+    margin-bottom: 70px;
+    @include mobile {
+      width: 20%;
+    }
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.73;
+    align-items: center;
+    margin-bottom: 40px;
+    @include mobile {
+      font-size: 14px;
+    }
+    span {
+      @include mobile {
+        display: inline-block;
+      }
+    }
+  }
+  .mail_icon {
+    width: 2%;
+    margin-bottom: 20px;
+    @include mobile {
+      width: 6%;
+    }
+  }
+}
