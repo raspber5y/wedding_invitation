@@ -673,6 +673,7 @@ input {
 .form button {
   width: 76px;
   height: 42px;
+  color: #1d1d1d;
   background: #fff;
   border: none;
   display: flex;
@@ -749,6 +750,7 @@ input {
   position: absolute;
   font-family: Italiana;
   font-size: 25px;
+  height: 1px;
   top: 50%;
   left: 50%;
   z-index: 999;
