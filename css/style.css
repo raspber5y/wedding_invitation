@@ -348,6 +348,8 @@ aside {
   right: 0;
   margin: 0;
   text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 .date {
@@ -388,7 +390,7 @@ aside {
 }
 
 .hotel {
-  padding-bottom: 70px;
+  padding-bottom: 35px;
 }
 .hotel .hotel_name {
   font-size: 17px;

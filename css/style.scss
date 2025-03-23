@@ -215,6 +215,8 @@ aside {
       right: 0;
       margin: 0;
       text-align: center;
+      display: grid;
+      justify-content: center;
     }
   }
 }
@@ -257,7 +259,7 @@ aside {
 }
 
 .hotel {
-  padding-bottom: 70px;
+  padding-bottom: 35px;
   .hotel_name {
     font-size: 17px;
     padding-bottom: 15px;
