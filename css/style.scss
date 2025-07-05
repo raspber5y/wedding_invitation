@@ -419,6 +419,7 @@ a {
       border-bottom: 1px solid #ffffff;
       width: 5%;
       padding-bottom: 10px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -440,7 +441,7 @@ title_shape {
 .lead_text {
   text-align: center;
   font-size: 14px;
-  padding: 60px 0px;
+  padding: 30px 0px;
   color: #ffffff;
   line-height: 1.6;
   span {
@@ -559,9 +560,9 @@ input {
 .form button:hover {
   background-color: #d5d5d5;
 }
-.rsvp_tell {
-  padding-bottom: 30px;
-}
+// .rsvp_tell {
+//   padding-bottom: 30px;
+// }
 
 .rsvp_address,
 .rsvp_allergy {
