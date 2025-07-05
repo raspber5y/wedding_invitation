@@ -556,6 +556,11 @@ a {
   padding-bottom: 10px;
 }
 
+.form_h3 {
+  color: #d9d9d9;
+  padding-bottom: 30px;
+}
+
 title_shape {
   content: "";
   position: absolute;
@@ -581,6 +586,7 @@ title_shape {
   display: flex;
   justify-content: center;
   font-size: 16px;
+  margin: 5px 15%;
 }
 
 input[type=radio] {
@@ -647,7 +653,6 @@ input {
 .form_label {
   font-size: 13px;
   padding: 6px 30px;
-  margin-top: 30px;
 }
 
 .form_field {
@@ -693,9 +698,13 @@ input {
   background-color: #d5d5d5;
 }
 
+.rsvp_tell {
+  padding-bottom: 30px;
+}
+
 .rsvp_address,
 .rsvp_allergy {
-  padding: 0px 0px 30px 0px;
+  padding: 30px 0px;
 }
 
 .copyright {
