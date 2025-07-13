@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morimotos wedding invitation</title>
+    <meta name="description" content="前撮り写真">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="web-app-manifest-192x192">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <header id="top">
+            <div id="splash">
+                <div id="splash_text"></div>
+            </div>
+            <!-- <div id="js_header" class="second_header">
+            <div class="header_wrap">
+                <div>
+                    <a href="../index.html">
+                        <h1>
+                            <img class="emiuno_logo" src="./images/unoemi_logo.png" alt="emiunoのロゴ">
+                        </h1>
+                    </a>
+                </div>
+                <div class="pc_btn">menu<span></span></div>
+            </div>
+        </div> -->
+        </header>
+        <main class="main" id="inview">
+            <div class="sp_wrap">
+                <div class="mv_wrap">
+                    <div class="row">
+                        <img style="width: 154px;" src="./images/yohji_80.png" class="photo photo1" alt="悠太">
+                        <img style="width: 154px;" src="./images/wd_34.png" class="photo photo2" alt="二人">
+                    </div>
+                    <div class="center">
+                        <h2 class="photo_title">photo</h2>
+                        <img style="width: 113px;" src="./images/flower_05.png" class="photo photo3" alt="花と指輪">
+                    </div>
+                    <div class="row">
+                        <img style="width: 205px;" src="./images/IMG_5843.png" class="photo photo4" alt="二人">
+                        <img style="width: 205px; margin-left: -40px;" src="./images/wd_21.png" alt="江美">
+                    </div>
+                </div>
+
+                <section class="photo_wrap" id="photo_link">
+                    <img style="width: 187px; margin: 0px 0 0 auto;" class="right" src="./images/flower_04.png"
+                        alt="指輪">
+                    <img style="width: 192px;" class="center" src="./images/wd_39.png" alt="二人">
+                    <img style="width: 222px;" class="left" src="./images/wd_52.png" alt="二人">
+                    <img style="width: 222px;" class="left" src="./images/wd_53.png" alt="二人">
+                    <img style="width: 200px;" class="right" src="./images/wd_56.png" alt="二人">
+                    <img style="width: 256px;" class="center" src="./images/wd_37.png" alt="二人">
+                    <img style="width: 206px;" class="right" src="./images/wd_60.png" alt="二人">
+                    <img style="width: 179px;" class="left_2" src="./images/wd_32.png" alt="二人">
+                    <img style="width: 141px;" class="right_2" src="./images/wd_11.png" alt="悠太">
+                    <img style="width: 250px;" class="center_2" src="./images/flower_02.png" alt="二人">
+                    <img style="width: 127px;" class="left" src="./images/wd_26.png" alt="江美">
+                    <img style="width: 164px;" class="center" src="./images/wd_36.png" alt="二人">
+                </section>
+                <section class="thanks_wrap" id="thanks_link">
+                    <div>
+                        <h2 class="thanks_title">special thanks</h2>
+                        <div class="thanks">
+                            <p class="sign">撮影<span>タカ</span></p>
+                            <img style="width: 150px;" src="./images/taka.png" alt="タカ">
+                            <div class="link">
+                                <div class="insta">
+                                    <a href="https://www.instagram.com/bongram.003?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                        target="_blank">instagram</a>
+                                </div>
+                                <div class="homepage">
+                                    <a href="https://bongram003.my.canva.site/" target="_blank">portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="copyright">
+                    <p>© 2025 emi morimoto</p>
+                </div>
+            </div>
+        </main>
+        <aside class="pc_nav">
+            <ul>
+                <li>
+                    <a href="#photo_link">
+                        <p>photo</p>
+                        <p class="sub_title">写真</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#thanks_link">
+                        <p>special thanks</p>
+                        <p class="sub_title">ご協力</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <script src="./js/script.js"></script>
+
+        <!-- ローディング -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+        <script>
+            //テキストのカウントアップ+バーの設定
+            var bar = new ProgressBar.Line(splash_text, {//id名を指定
+                easing: 'easeInOut',//アニメーション効果linear、easeIn、easeOut、easeInOutが指定可能
+                duration: 1000,//時間指定(1000＝1秒)
+                strokeWidth: 0.1,//進捗ゲージの太さ
+                color: '#1d1d1d',//進捗ゲージのカラー
+                trailWidth: 0.1,//ゲージベースの線の太さ
+                trailColor: '#fff',//ゲージベースの線のカラー
+                text: {//テキストの形状を直接指定				
+                    style: {//天地中央に配置
+                        position: 'absolute',
+                        left: '50%',
+                        top: '50%',
+                        padding: '0',
+                        margin: '-40px 0 0 0',//バーより上に配置
+                        transform: 'translate(-50%,-50%)',
+                        color: '#1d1d1d',
+                    },
+                    autoStyleContainer: false //自動付与のスタイルを切る
+                },
+                step: function (state, bar) {
+                    bar.setText(Math.round(bar.value() * 100) + ' %'); //テキストの数値
+                }
+            });
+            //アニメーションスタート
+            bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
+                $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
+            }); 
+        </script>
+    </div>
+</body>
+
+</html>
