@@ -276,16 +276,16 @@ aside {
 .mv_wrap .row {
   display: flex;
   justify-content: space-between;
-  padding: 38px;
+  padding: 5%;
 }
 .mv_wrap .center {
   display: flex;
   align-items: end;
-  padding-left: 58px;
-  margin-top: -70px;
+  padding-left: 5%;
+  margin-top: -12%;
 }
 .mv_wrap .center h2 {
-  padding-right: 58px;
+  padding-right: 8%;
 }
 .mv_wrap img {
   max-width: 100%;
